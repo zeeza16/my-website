@@ -111,3 +111,75 @@ footer {
     bottom: 0;
     width: 100%;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* จัดกลางในแนวนอน */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    height: 100vh; /* ความสูงเต็มหน้าจอ */
+    background-color: #f4f4f4;
+    flex-direction: column; /* จัดเรียงให้เนื้อหากระจายในแนวตั้ง */
+}
+
+/* เมนู Navbar */
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* การจัดเรียงกล่องสินค้าหรือเนื้อหาหลัก */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* สไตล์ของรูปภาพ */
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* สไตล์ของรายละเอียดสินค้า */
+.product-details {
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.product-details h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.product-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
